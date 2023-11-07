@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign page for users</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="navbar">
+            <div id="logo-container">
+                <a href="#"><h1>eLegalEase</h1></a>
+            </div>
+            <div id="pages-link">
+                <a href="#"><h3>Home</h3></a>
+                <a href="#"><h3>Services</h3></a>
+                <a href="#"><h3>Advocate</h3></a>
+                <a href="#"><h3>About Us</h3></a>
+                <button><a href="#"><h3>Login</h3></a></button>
+                <button><a href="#"><h3>Sign Up</h3></a></button>
+            </div>
+        </div>
+        <div id="container">
+            <div id="signup-details">
+                <div id="signup-heading">
+                    <div class="h-animation">
+                        <h1>Create your account</h1>
+                    </div>
+                    <form action="">
+                        <div id="form-contains">
+                            <div id="form-inputs">
+                                <div class="fi">
+                                    <input type="text" placeholder="First Name" required>
+                                </div>
+                                <div class="fi">
+                                    <input type="text" placeholder="Last Name" required>
+                                </div>
+                                <div class="fi">
+                                    <input type="number" placeholder="Phone Number">
+                                </div>
+                                <div class="fi">
+                                    <input type="email" placeholder=" Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="form-conditions">
+                            <input type="checkbox">
+                            <h4>By creating an account you are agree with our</h4>
+                            <a href=""><h4>Terms & Conditions</h4></a>
+                        </div>
+                        <div id="form-submit">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                        <div id="lastline">
+                            <h4>Already have an account?</h4>
+                            <a href=""><h4>Sign In</h4></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer"> 
+            <div id="footer">
+                <div id="footer-leftside">
+                    <h4>2023-2024 &copy;</h4>
+                    <h4>eLegalEase Pvt. Ltd.</h4>
+                    <a href=""><h4>|  All Rights Are Reserved</h4></a>
+                </div>
+                <div id="footer-rightside">
+                    <div class="combine">
+                        <i class="ri-phone-fill"></i>
+                        <a href=""><h4>+91-1234567890</h4></a>
+                    </div>
+                    <div class="combine">
+                        <i class="ri-mail-fill"></i>
+                        <a href=""><h4>info@elegalease.com</h4></a>
+                    </div>
+                    <div class="combine">
+                        <i class="ri-whatsapp-fill"></i>
+                        <a href=""><h4>whatsapp</h4></a>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        gsap.to('#footer h4', { 
+                y: '10%',
+                 duration: 1,
+                 ease: 'power2.inOut',
+                 delay: 0.3 });
+        gsap.to('#footer i', {
+                 y: '10%', 
+                duration: 1,
+                 ease: 'power2.inOut',
+                 delay: 0.3 });
+        gsap.to('.h-animation h1', { 
+                y: '0%', 
+                duration: 1, 
+                ease: 'power2.inOut',
+                 delay: 0.5 });
+        gsap.to('#form-submit', {
+                     opacity: 1, 
+                    duration: 2,
+                     ease: 'power3.inOut',
+                 delay: 0.4 });
+        gsap.to('#container', { 
+                    opacity: 1,
+                     duration: 2, 
+                    ease: 'power3.inOut', 
+                delay: 0.2 });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+*{font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;}
+body{
+    font-family: General sans;
+}
+#main{
+    width: 100%;
+}
+#navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo-container{
+    padding-left: 25px;
+}
+#logo-container h1{
+    font-size: 2.75vw;
+}
+#logo-container a{
+    color: white;
+    text-decoration: none;
+}
+#pages-link{
+    display: flex;
+    gap: 20px;
+    padding-right: 30px;
+    align-items: center;
+}
+#pages-link a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25vw;
+}
+#pages-link a:hover{
+    color: #807b7b;
+}
+#pages-link button{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+#pages-link button a{
+    color: black;
+    font-size: 0.9vw;
+}
+#container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    
+}
+#signup-details{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+#signup-heading h1{
+    padding-top: 45px;
+    text-align: center;
+    font-size: 3.75vw;
+}
+.h-animation{
+        width: fit-content;
+    padding-left: 90px;
+    overflow: hidden;
+}
+.h-animation h1{
+ transform: translateY(-300px);
+}
+
+#form-contains{
+ width: 100%;
+ height: 150px;
+ padding-top: 10px;
+ 
+
+}
+#form-inputs{
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    padding: 15px 170px;
+}
+.fi input{
+    padding-left: 10px;
+    width: 201px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1vw;
+    border: 1px solid black;
+}
+#form-conditions{
+    display: flex;
+    padding-top: 35px;
+    gap: 7px;
+    padding-left: 115px;
+}
+#form-conditions input[type="checkbox"] {
+    transform: scale(1.5);
+}
+#form-conditions a {
+    color: black;
+    text-decoration: none;
+    opacity: 1;
+}
+#form-conditions a h4{
+    opacity: 1;
+}
+#form-conditions h4{
+    opacity: 0.7;
+}
+#form-submit{
+    padding: 33px 125px;
+    opacity: 0;
+}
+#form-submit button{
+    cursor: pointer;
+    width: 574px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.25vw;
+}
+#lastline{
+    padding: 0px 224px;
+    display: flex;
+    gap: 15px;
+}
+#lastline a{
+color: #3056D3;
+text-decoration: none;
+}
+#footer-leftside{
+    display: flex;
+    gap: 10px;
+}
+#footer-leftside a{
+text-decoration: none;
+color: #3237CF;
+}
+.combine{
+    display: flex;
+    gap: 5px;
+}
+.combine a{
+    color: black;
+    text-decoration: none;
+}
+#footer-rightside{
+    display: flex;
+    gap: 50px;
+}
+#footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    overflow-y: hidden;
+    position: absolute;
+}
+#footer h4 {
+    transform: translateY(200px);
+}
+
+#footer i {
+    transform: translateY(200px);
+}
+@media (max-width:1200px) and (min-width:1000px) {
+    .h-animation{
+        width: fit-content;
+    padding-left: 143px;
+    overflow: hidden;
+}
+#signup-heading h1 {
+    font-size: 4.75vw;
+  }
+  #footer-leftside{
+    display: flex;
+    gap: 3px;
+}
+#footer-rightside{
+    display: flex;
+    gap: 30px;
+}
+}
+@media (max-width:1000px) and (min-width:800px){
+    #signup-details{
+        width: 700px;
+        height: 400px;
+    }
+    #container{
+        position: relative;
+        top: -50px;
+    }
+    #signup-heading h1{
+        font-size: 5.5vw;
+    }
+    .h-animation{
+        padding-left: 111px;
+    }
+    #form-inputs{
+        gap: 55px;
+        padding: 15px 116px;
+    }
+    .fi input{
+        font-size: 1.5vw;
+    }
+    #form-conditions{
+        padding-left: 55px;
+    }
+    #form-submit{
+        padding: 15px 63px;
+    }
+    #lastline{
+        padding: 0px 180px;
+        margin-top: -15px;
+    }
+    #footer-leftside{
+        gap: 5px;
+    }
+    .combine{
+        display: flex;
+        gap: 5px;
+    }
+    #footer-rightside{
+        display: flex;
+        gap: 10px;
+    }
+    #footer{
+        padding: 5px 10px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+@media (max-width:800px) and (min-width:600px){
+    #main{
+        overflow-x: hidden;
+    }
+    #pages-link{
+        gap: 16px;
+    }
+    #pages-link a{
+        font-size: 1.5vw;
+    }
+    #pages-link button a{
+        color: black;
+        font-size: 1.5vw;
+    }
+    #signup-details{
+        width: 550px;
+        height: 450px;
+    }
+    #signup-heading h1{
+        font-size: 5.5vw;
+        text-align: center;
+    }
+    .h-animation{
+        padding-left: 60px;
+    }
+    #form-inputs{
+        gap: 35px;
+        padding: 10px 46px;
+    }
+    .fi input{
+        font-size: 2.5vw;
+    }
+    #form-conditions{
+        padding-left: 50px;
+        gap: 12px;
+        font-size: 1.5vw;
+        padding-top: 30px;
+    }
+    #form-submit{
+        padding: 45px 26px;
+    }
+    #form-submit button{
+        width: 495px;
+        font-size: 2.75vw;
+    }
+    #lastline{
+        padding: 1px 92px;
+        margin-top: -35px;
+    }
+    #footer-leftside{
+        gap: 5px;
+    }
+    #footer-leftside h4{
+        font-size: 1.5vw;
+    }
+    .combine{
+        display: flex;
+        gap: 10px;
+    }
+    #footer-rightside{
+        display: flex;
+        gap: 10px;
+    }
+    #footer-rightside h4{
+    font-size: 1.5vw;
+    }
+    #footer{
+        padding: 5px 10px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+@media (max-width:600px){
+    #pages-link{
+        gap: 3vw;
+        padding-right: 2vw;
+    }
+    #logo-container {
+        padding-left: 2vw;
+      }
+    #pages-link a{
+        font-size: 1.95vw;
+    }
+    #pages-link button {
+        width: 9vw;
+        height: 5vw;
+    }
+    #pages-link button a{
+        font-size: 1.75vw;
+    }
+    #signup-details{
+        width: 91vw;
+        height: 450px;
+    }
+    #signup-heading h1{
+        font-size: 5.75vw;
+    }
+    .h-animation{
+        padding: 0px 46px;
+    }
+    #form-inputs{
+        gap: 22px;
+        padding: 8px 8vw;
+    }
+    .fi input{
+        font-size: 3.5vw;
+        width: 33vw;
+    }
+    #form-conditions{
+        gap: 7px;
+        font-size: 2vw;
+        padding: 3vw 10vw;
+    }
+    #form-conditions input[type="checkbox"] {
+        transform: scale(1);
+    }
+    #form-submit{
+        padding: 8vw 8vw;
+    }
+    #form-submit button{
+        width: 75vw;
+        font-size: 3.75vw;
+    }
+    #lastline{
+        padding: 0.5vw 16vw;
+        font-size: 3vw;
+        margin-top: -25px;
+    }
+    #footer-leftside{
+        gap: 2vw;
+    }
+    #footer-leftside h4{
+        font-size: 1.5vw;
+    }
+    .combine{
+        display: flex;
+        gap: 0vw;
+    }
+    #footer-rightside{
+        display: flex;
+        gap: 2vw;
+    }
+    #footer-rightside h4{
+    font-size: 1.5vw;
+
+    }
+    #footer{
+        padding: 2vw 2vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+    }
+}
