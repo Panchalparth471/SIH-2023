@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page for Lsp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main">
         <div id="nav">
                 <div id="logo-container">
-                    <a href="#"><h1>eLegalEase</h1></a>
+                    <a href="#"><h1 style="color:  #FBBA08;">ELegalEase</h1></a>
                 </div>
                 <div id="pages-link">
                     <a href="#"><h3>Home</h3></a>
@@ -19,6 +22,7 @@
                     <a href="#"><h3>About Us</h3></a>
                 </div>
         </div>
+
         <div id="container">
             <div id="leftside">
                 <div id="heading">
@@ -34,43 +38,81 @@
                 </div>
             </div>
             <div id="rightside">
-                <div id="form-container">
-                    <form action="" method="post">
-                        <div id="form-heading">
-                            <h1><b>Login to your account</b></h1>
-                            <h5>Ready to turn the page on legal challenges?</h5>
-                        </div>
-                        <div id="form-data">
-                            <label for="Email">
-                                Email
-                                <br>
-                                <input type="email" name="email">
-                            </label>
-                            <br>
-                            <br>
-                            <div class="combine">
-                                <label for="Password">
-                                    Password
-                                    <br>
-                                    <input type="password" name="password">
-                                </label>
-                                <a href="#"><h5>Forgot Password?</h5></a>
-                            </div>
-                            
-                            <br>
-                            <br>
-                            <button type="submit">Login</button>
-                            <br>
-                            <br>
-                            <div class="lastline">
-                                <h5>Not Registered Yet?</h5>
-                                <a href="#"><h5>Create an account</h5></a>
-                            </div>
-                        </div>
-                    </form>
+              <div id="login-form">
+                <form>
+                <div class="heading">
+                      <h1 >
+                    Login to your account
+                  </h1>
                 </div>
-            </div>
+                <div class="sh">
+                    <h5>
+                        Ready to turn the page on your legal challenges?
+                    </h5>
+                </div>
+
+                <div style="display: flex; flex-direction:column; margin-top:40px;">
+                    <label for="Email" style="color: #121127;
+                                font-family: Nunito Sans;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;">
+                        Email
+
+                    </label> <input type="email" name="email" style="margin-top: 10px; margin-bottom:30px;">
+                    <label for="password" style="color: #121127;
+                               font-family: Nunito Sans;
+                               font-size: 20px;
+                               font-style: normal;
+                               font-weight: 700;
+                               line-height: normal;">
+                     Password
+                    </label>   <input type="password" name="password">
+
+                </div>
+                
+                <div style="color: #808080;
+                            font-family: Nunito Sans;
+                            font-size: 15px;
+                            font-style: normal;
+                            margin-top:10px;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-align:end">
+                    Forgot Password?
+                </div>
+
+                <div>
+                    <button class="login">
+                        Login
+                    </button>
+                </div>
+
+                <div style="color: #121127;
+                           font-family: Nunito Sans;
+                           text-align:center;
+                           margin-top:30px;
+                           font-size: 17px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: normal;">
+                    Not Registered Yet? <span style="color: #0797FF;
+                           font-family: Nunito Sans;
+                           font-size: 17px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: normal;">Create Account</span>
+                </div>
+
+                  
+                </form>
+              </div>
         </div>
+        </div>
+
+
+ 
     </div>
 </body>
 </html>
