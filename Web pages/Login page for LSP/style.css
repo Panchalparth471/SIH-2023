@@ -9,6 +9,10 @@ flex-wrap: wrap;
 
 }
 
+body{
+    overflow-x: hidden;
+}
+
 input{
     padding-left: 10px;
 }
@@ -26,6 +30,10 @@ input{
     height: 100%;
  
 }
+
+
+
+
 #nav{
     width: 100%;
     height: 80px;
@@ -50,20 +58,7 @@ input{
     text-decoration: none;
  
 }
-#pages-link{
-    display: flex;
-     gap: 40px;
-    padding-right: 100px;
-}
-#pages-link a{
-   color: white;
-   text-decoration: none;
-   font-size: 15px;
-  
-}
-#pages-link a :hover{
-    color: #aeacac;
-}
+
 #leftside{
     width: 60%;
     
@@ -107,6 +102,13 @@ input{
     justify-content: center;
     
 }
+
+.page-link:hover{
+  transform: scale(1.1);
+  transition:all;
+  transition-duration: 0.5s;
+}
+
 #login-form{
     height: 615px;
     width: 90%;
@@ -117,6 +119,11 @@ align-items: center;
 border-radius: 30px;
 padding-top: 50px;
 border: 1px solid #808080;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
 }
    
 h1{
@@ -154,6 +161,10 @@ color: #FFF;
 font-family: Nunito Sans;
 margin-top: 40px;
 font-size: 20px;
+position: relative;
+    z-index: 1;
+
+        transition: all 0.5s;
 font-style: normal;
 font-weight: 800;
 cursor:pointer;
@@ -161,12 +172,58 @@ line-height: normal;
 flex-shrink: 0;
 }
 
+
+.login::before{
+     content: "";
+    position: absolute;
+    background-color:#DE970B;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+
+.login:hover::before{
+    transform: scaleX(1);
+}
+
+
 .footer{
     display: flex;
     width: 100vw;
     justify-content: space-between;
     align-items: center;
 }
+
+#navP1
+{
+    height: 30px;
+    padding-left:40vw;
+}
+
+
+
+
+
+@media(max-width:765px)
+{
+    #navP1
+    {
+        height: 20vh;
+        padding: 0;
+        padding-left: 0px;
+
+    }
+
+
+}
+
+
+
 
 @media (max-width:1200px) {
     #leftside{
@@ -176,10 +233,15 @@ flex-shrink: 0;
     }
 
     #rightside{
-        width: 100%;
+        width: 100vw;
       
     }
+
+    
+
 }
+
+
 
 
 
@@ -240,5 +302,17 @@ input{
 @media (max-width:350px) {
     #login-form{
         border: none;
+    }
+}
+
+@media(min-width:765px)
+{
+   
+    #navP1{
+        transform: translateY(-55px);
+    }
+
+    .container2{
+        height: 0;
     }
 }
