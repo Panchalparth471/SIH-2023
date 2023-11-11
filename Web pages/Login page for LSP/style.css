@@ -2,54 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+flex-wrap: wrap;
+
+
 }
-html , body{
-    height: 100%;
-    width: 100%;
-    font-family: General Sans;
+
+body{
+    overflow-x: hidden;
 }
+
+input{
+    padding-left: 10px;
+}
+
 #main{
+    display: flex;
     width: 100%;
-    height: 100vh;
-    overflow-y: hidden;
+    height: 100%;
+  
 }
 #container{
     width: 100%;  
     display: flex;
+    justify-content: center;
+    height: 100%;
+ 
 }
+
+
+
+
 #nav{
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: #632E05;
     color: white;
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     border-radius: 3px;
 }
+
+
+.hp{
+    color: #808080;
+}
 #logo-container{
+
     padding-left: 30px;
 }
 #logo-container a{
     color: rgb(245, 191, 54);
     text-decoration: none;
-    font-size: 2.5vmin;
+ 
 }
-#pages-link{
-    display: flex;
-    gap: 60px;
-    padding-right: 100px;
-}
-#pages-link a{
-   color: white;
-   text-decoration: none;
-   font-size: 1.25vw;
-}
-#pages-link a :hover{
-    color: #aeacac;
-}
+
 #leftside{
-    width: 55%;
+    width: 60%;
+    
     height: 100vh;
     background-image: url('Court\ Hammer.png');
     background-repeat: no-repeat;
@@ -66,6 +78,8 @@ html , body{
     padding-left: 35px;
     padding-top: 40px;
 }
+
+
 #description h1{
     color: white;
     font-size: 2.75vw;
@@ -80,1732 +94,225 @@ html , body{
 .yellow #white {
     color: white;
 }
+
 #rightside{
-    width: 45%;
-    padding-left: 150px;
-    padding-top: 70px;
-}
-#form-container{
-    width: 400px;
-    height: 500px;
-    border: 1px solid black;
-    border-radius: 20px;
-}
-#form-heading{
-    padding-left: 35px;
-    padding-top: 60px;
-    width: fit-content;
-}
-#form-heading h1{
-    text-align: center;
-    font-size: 2.25vw;
-}
-#form-heading h5{
-   text-align: left;
-   font-size: 1vw;
-}
-#form-data{
-    padding-left: 35px;
-    padding-top: 30px;
-}
-#form-data input{
-    width: 335px;
-    height: 31px;
-    border-radius: 5px;
-    font-size: 1.1vw;
-}
-#form-data button{
-    cursor: pointer;
-    width: 334px;
-    height: 35px;
-    border-radius: 5px;
-    font-size: 1.25vw;
-    background-color:  rgb(251, 186, 8);
-    border: none;
-    color: whitesmoke;
-    font-weight: 600;
-}
-.combine{
-    width: fit-content;
-}
-.combine h5{
-    text-align: right;
-}
-.combine a{
-    color: black;
-    text-decoration: none;
-}
-.lastline{
+    width: 40%;
     display: flex;
-    gap: 10px;
-    padding-left: 45px;
-}
-.lastline a{
-    color: rgb(7, 151, 255);
-    text-decoration: none;
+    height: 100vh;
+    justify-content: center;
+    
 }
 
-/* For the responsiveness between 300 to 400 px  */
-@media screen and (max-width: 400px) and (min-width: 300px){
-    #main{
-        width: 100%;
-        height: 100vh;
-        /* overflow-y: hidden; */
+.page-link:hover{
+  transform: scale(1.1);
+  transition:all;
+  transition-duration: 0.5s;
+}
+
+#login-form{
+    height: 615px;
+    width: 90%;
+ display: inline-flex;
+flex-direction: column;
+margin-top: 30px;
+align-items: center;
+border-radius: 30px;
+padding-top: 50px;
+border: 1px solid #808080;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+}
+   
+h1{
+    color: #121127;
+font-family: Nunito Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+input{
+    width: 420px;
+height: 46px;
+flex-shrink: 0;
+fill: #FFF;
+stroke-width: 1px;
+stroke: rgba(128, 128, 128, 0.50);
+}
+h5{
+    color: #121127;
+font-family: Nunito Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.login{
+    border-radius: 5px;
+border: 1px solid rgba(18, 17, 39, 0.20);
+background: #FBBA08;
+width: 420px;
+height: 46px;
+color: #FFF;
+font-family: Nunito Sans;
+margin-top: 40px;
+font-size: 20px;
+position: relative;
+    z-index: 1;
+
+        transition: all 0.5s;
+font-style: normal;
+font-weight: 800;
+cursor:pointer;
+line-height: normal;
+flex-shrink: 0;
+}
+
+
+.login::before{
+     content: "";
+    position: absolute;
+    background-color:#DE970B;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+
+.login:hover::before{
+    transform: scaleX(1);
+}
+
+
+.footer{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navP1
+{
+    height: 30px;
+    padding-left:40vw;
+}
+
+
+
+
+
+@media(max-width:765px)
+{
+    #navP1
+    {
+        height: 20vh;
+        padding: 0;
+        padding-left: 0px;
+
     }
-    #container{
-        width: 100%;  
-        display: inline-block;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 13px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2.5vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 10px;
-        padding-right: 20px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
+
+
+}
+
+
+
+
+@media (max-width:1200px) {
     #leftside{
-        width: 100%;
+        display: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    #rightside{
+        width: 100vw;
+      
+    }
+
+    
+
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    #nav{
+        justify-content:space-between;
+           
+        align-items: center;
+        gap: 10px;
         height: 100px;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
     }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 6.5vw;
-        padding-left: 32px;
-        padding-top: 28px;
-    }
-    #description{
-        padding-left: 160px;
-        padding-top: 6px;
-        display: none;
-    }
-    #rightside{
-        width: 100%;
-        padding-left: 8px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 300px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 18px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 6.5vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 3.25vw;
-    }
-    #form-data{
-        padding-left: 18px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 250px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 4.2vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 250px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 6.25vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 5px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-}
 
-/* For the responsiveness between 400 to 500 px  */
-@media screen and (max-width: 500px) and (min-width: 400px){
-    #main{
-        width: 100%;
-        height: 100vh;
-        /* overflow-y: hidden; */
-    }
-    #container{
-        width: 100%;  
-        display: inline-block;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 13px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2.5vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 16px;
-        padding-right: 20px;
-    }
     #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 100%;
-        height: 100px;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 5.5vw;
-        padding-left: 64px;
-        padding-top: 28px;
-    }
-    #description{
-        padding-left: 160px;
-        padding-top: 6px;
-        display: none;
-    }
-    #rightside{
-        width: 100%;
-        padding-left: 60px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 18px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 5.75vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 2.875vw;
-    }
-    #form-data{
-        padding-left: 18px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 3.2vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 4.25vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-}
-
-/* For the responsiveness between 500 to 600 px  */
-@media screen and (max-width: 600px) and (min-width: 500px){
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 13px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2.5vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 16px;
-        padding-right: 20px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 34%;
-        height: 100vh;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 3.5vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 20px;
-        padding-top: 165px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3.3vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
         padding-left: 10px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 18px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 4.75vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 2vw;
-    }
-    #form-data{
-        padding-left: 18px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 3.2vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 4.25vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
+   color: white;
+   text-decoration: none;
+   font-size:12px;
+  
+}
+#pages-link{
+     gap:30px;
+     padding-right: 0;
 }
 
-/* for responsiveness between 600 to 700 px  */
-@media screen and (max-width: 700px) and (min-width: 600px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 13px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2.5vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 16px;
-        padding-right: 20px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 34%;
-        height: 100vh;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 3.5vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 20px;
-        padding-top: 165px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3.3vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 60px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 4vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 2vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 3.2vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 4.25vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
+#login-form{
+    width: 90%;
+    
 }
 
-/* for responsiveness between 700 to 800 px  */
-@media screen and (max-width: 800px) and (min-width: 700px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 13px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2.5vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 16px;
-        padding-right: 20px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 34%;
-        height: 100vh;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 3.5vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 20px;
-        padding-top: 165px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3.3vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 90px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 3.7vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 1.7vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 2.2vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 3.25vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
+h1{
+    font-size: 30px;
 }
 
-/* for responsiveness between 800 to 900 px  */
-@media screen and (max-width: 900px) and (min-width: 800px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 25px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2.25vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 35px;
-        padding-right: 50px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2.25vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 34%;
-        height: 100vh;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 3.5vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 20px;
-        padding-top: 165px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3.3vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 90px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 3.2vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 1.5vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 1.75vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 2.25vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
+input{
+    width: 100%;
 }
 
-/* for responsiveness between 1000 to 1100 px  */
-@media screen and (max-width: 1100px) and (min-width: 1000px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 65px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 35px;
-        padding-right: 50px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 34%;
-        height: 100vh;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 3.25vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 20px;
-        padding-top: 165px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 190px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 2.5vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 1.25vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 1.5vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 2vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
-}
-
-/* for responsiveness between 900 to 1000 px  */
-@media screen and (max-width: 1000px) and (min-width: 900px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 45px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 35px;
-        padding-right: 50px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 2vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 34%;
-        height: 100vh;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 3.5vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 20px;
-        padding-top: 165px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3.3vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 150px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 2.7vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 1.35vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 1.75vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 2.25vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
-}
-
-/* for responsiveness between 1100 to 1200 px  */
-@media screen and (max-width: 1200px) and (min-width: 1100px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 65px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 2vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 35px;
-        padding-right: 80px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 1.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 34%;
-        height: 100vh;
-        background-image: url('brown\ gradient.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 3.25vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 20px;
-        padding-top: 165px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 220px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 2.4vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 1.2vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 1.5vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 2vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
-}
-
-/* for responsiveness between 1200 to 1300 px  */
-@media screen and (max-width: 1300px) and (min-width: 1200px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 65px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 1.75vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 35px;
-        padding-right: 80px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 1.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 60%;
-        height: 100vh;
-        background-image: url('Court\ Hammer.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 2.75vw;
-        padding-left: 27px;
-        padding-top: 115px;
-    }
-    #description{
-        padding-left: 45px;
-        padding-top: 45px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3.5vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 120px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 2vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 1vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 1.25vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 1.75vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
-}
-
-/* for responsiveness between 1300 to 1400 px  */
-@media screen and (max-width: 1400px) and (min-width: 1300px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 65px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 1.75vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 35px;
-        padding-right: 80px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 1.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 60%;
-        height: 100vh;
-        background-image: url('Court\ Hammer.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 2.75vw;
-        padding-left: 27px;
-        padding-top: 60px;
-    }
-    #description{
-        padding-left: 45px;
-        padding-top: 45px;
-    }
-    #description h1{
-        color: white;
-        font-size: 3.25vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 160px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 2vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 1vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 1.25vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 1.5vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
-}
-
-/* for responsiveness between 1400 to 1500 px  */
-@media screen and (max-width: 1500px) and (min-width: 1400px) {
-    #main{
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 100%;  
-        display: flex;
-    }
-    #nav{
-        width: 100%;
-        height: 70px;
-        background-color: #632E05;
-        color: white;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 3px;
-    }
-    #logo-container{
-        padding-left: 65px;
-    }
-    #logo-container a{
-        color: rgb(245, 191, 54);
-        text-decoration: none;
-        font-size: 1.75vmin;
-    }
-    #pages-link{
-        display: flex;
-        gap: 35px;
-        padding-right: 80px;
-    }
-    #pages-link a{
-       color: white;
-       text-decoration: none;
-       font-size: 1.75vw;
-    }
-    #pages-link a :hover{
-        color: #aeacac;
-    }
-    #leftside{
-        width: 60%;
-        height: 100vh;
-        background-image: url('Court\ Hammer.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-    #heading h2{
-        color: rgb(255, 186, 8);
-        font-size: 2.5vw;
-        padding-left: 27px;
-        padding-top: 60px;
-    }
-    #description{
-        padding-left: 45px;
-        padding-top: 85px;
-    }
-    #description h1{
-        color: white;
-        font-size: 2.75vw;
-    }
-    #description #yellow {
-        color: rgb(255, 186, 8);
-    }
-    .yellow{
-        display: flex;
-        gap: 10px;
-    }
-    .yellow #white {
-        color: white;
-    }
-    #rightside{
-        width: 45%;
-        padding-left: 200px;
-        padding-top: 70px;
-    }
-    #form-container{
-        width: 320px;
-        height: 500px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #form-heading{
-        padding-left: 21px;
-        padding-top: 60px;
-        width: fit-content;
-    }
-    #form-heading h1{
-        text-align: center;
-        font-size: 1.75vw;
-    }
-    #form-heading h5{
-       text-align: left;
-       font-size: 0.875vw;
-    }
-    #form-data{
-        padding-left: 21px;
-        padding-top: 30px;
-    }
-    #form-data input{
-        width: 282px;
-        height: 31px;
-        border-radius: 5px;
-        font-size: 1.25vw;
-    }
-    #form-data button{
-        cursor: pointer;
-        width: 282px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 1.5vw;
-        background-color:  rgb(251, 186, 8);
-        border: none;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .combine{
-        width: fit-content;
-    }
-    .combine h5{
-        text-align: right;
-    }
-    .combine a{
-        color: black;
-        text-decoration: none;
-    }
-    .lastline{
-        display: flex;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .lastline a{
-        color: rgb(7, 151, 255);
-        text-decoration: none;
-    }
-
+.login{
+    width: 100%;
 }
 
 
+}
+
+@media (max-width:400px) {
+     #pages-link a{
+   font-size:8px;
+  
+}
+
+#login-form{
+    width: 95%;
+}
+}
+
+
+@media (max-width:350px) {
+    #login-form{
+        border: none;
+    }
+}
+
+@media(min-width:765px)
+{
+   
+    #navP1{
+        transform: translateY(-55px);
+    }
+
+    .container2{
+        height: 0;
+    }
+}

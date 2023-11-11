@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page for Lsp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main">
-        <div id="nav">
+        <!-- <div id="nav">
                 <div id="logo-container">
-                    <a href="#"><h1>eLegalEase</h1></a>
+                    <a href="#"><h1 style="color:  #FBBA08;">ELegalEase</h1></a>
                 </div>
                 <div id="pages-link">
                     <a href="#"><h3>Home</h3></a>
@@ -18,7 +24,32 @@
                     <a href="#"><h3>Advocate</h3></a>
                     <a href="#"><h3>About Us</h3></a>
                 </div>
-        </div>
+        </div> -->
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation" style=" margin: 0;background-color: #632E05;border:none;width:100vw;">
+    
+  <div class="container2">
+    <div class="navbar-header" style="width: 100vw;height:0px;">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+    </div>
+ <p style="font-size:30px;text-align:center;color:#FBBA08;font:bolder;padding-left:10px; margin-top:5px;" id="name">ELegalEase</p>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-bottom:30px;">
+      <ul class="nav navbar-nav" style="width:100vw;font-size:20px;text-align:center;" id="navP1">
+        <li class="page-link" style="text-align:center" ><a style="text-decoration: none;color:#FBBA08;" href="#">Home</a></li>
+        <li class="page-link" style="text-align:center" ><a style="text-decoration: none;color:#FBBA08;" href="#">Services</a></li>
+        <li class="page-link" style="text-align:center" ><a style="text-decoration: none;color:#FBBA08;" href="#">Advocate</a></li>
+        <li class="page-link" style="text-align:center" ><a style="text-decoration: none;color:#FBBA08;" href="#">About us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
         <div id="container">
             <div id="leftside">
                 <div id="heading">
@@ -34,43 +65,86 @@
                 </div>
             </div>
             <div id="rightside">
-                <div id="form-container">
-                    <form action="" method="post">
-                        <div id="form-heading">
-                            <h1><b>Login to your account</b></h1>
-                            <h5>Ready to turn the page on legal challenges?</h5>
-                        </div>
-                        <div id="form-data">
-                            <label for="Email">
-                                Email
-                                <br>
-                                <input type="email" name="email">
-                            </label>
-                            <br>
-                            <br>
-                            <div class="combine">
-                                <label for="Password">
-                                    Password
-                                    <br>
-                                    <input type="password" name="password">
-                                </label>
-                                <a href="#"><h5>Forgot Password?</h5></a>
-                            </div>
-                            
-                            <br>
-                            <br>
-                            <button type="submit">Login</button>
-                            <br>
-                            <br>
-                            <div class="lastline">
-                                <h5>Not Registered Yet?</h5>
-                                <a href="#"><h5>Create an account</h5></a>
-                            </div>
-                        </div>
-                    </form>
+              <div id="login-form">
+                <form>
+                <div class="heading">
+                      <h1 >
+                    Login to your account
+                  </h1>
                 </div>
-            </div>
+                <div class="sh">
+                    <h5>
+                        Ready to turn the page on your legal challenges?
+                    </h5>
+                </div>
+
+                <div style="display: flex; flex-direction:column; margin-top:40px;">
+                    <label for="Email" style="color: #121127;
+                                font-family: Nunito Sans;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;">
+                        Email
+
+                    </label> <input type="email" name="email" style="margin-top: 10px; margin-bottom:30px;">
+                    <label for="password" style="color: #121127;
+                               font-family: Nunito Sans;
+                               font-size: 20px;
+                               font-style: normal;
+                               font-weight: 700;
+                               line-height: normal;">
+                     Password
+                    </label>   <input type="password" name="password">
+
+                </div>
+                
+                <div style="color: #808080;
+                            font-family: Nunito Sans;
+                            font-size: 15px;
+                            font-style: normal;
+                            margin-top:10px;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-align:end;
+                             ">
+                             <span style="cursor:pointer">
+                                 Forgot Password?
+                             </span>
+                   
+                </div>
+
+                <div>
+                    <button class="login">
+                        Login
+                    </button>
+                </div>
+
+                <div style="color: #121127;
+                           font-family: Nunito Sans;
+                           text-align:center;
+                           margin-top:30px;
+                           font-size: 17px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: normal;">
+                    Not Registered Yet? <span style="color: #0797FF;
+                           font-family: Nunito Sans;
+                           font-size: 17px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: normal;
+                           cursor:pointer;">Create Account</span>
+                </div>
+
+                  
+                </form>
+              </div>
         </div>
+        </div>
+
+
+ 
     </div>
 </body>
 </html>
