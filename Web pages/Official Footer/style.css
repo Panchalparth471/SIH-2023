@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: General Sans;
+}
+#FOOTER{
+    width: 100%;
+    height: 100vh;
+}
+#official-footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+#official-footer a{
+    color: white;
+    text-decoration: none;
+}
+#social-media{
+    margin-top: 10px;
+    line-height: 35px;
+}
+#social-media h1{ 
+font-size: 2vw;
+}
+.sm-combine{
+    display: flex;
+    gap: 20px;
+    padding-left: 25px;
+}
+#solutions{
+    line-height: 35px;
+    padding-top: 15px;
+}
+#solutions h1{
+    font-size: 1.5vw;
+    text-transform: uppercase
+}
+#solutions h3{
+    font-size: 1vw;
+}
+#support{
+    line-height: 35px;
+    /* padding-top: 15px; */
+    margin-top: -55px;
+}
+.combine{
+    display: flex;
+    gap: 5px;
+}
+#support h1{
+    font-size: 1.5vw;
+    text-transform: uppercase
+}
+#support h3{
+    font-size: 1vw;
+}
+#advisor{
+    line-height: 35px;
+    /* padding-top: 15px; */
+    margin-top: -28px;
+}
+#advisor h1{
+    font-size: 1.5vw;
+    text-transform: uppercase
+}
+#advisor h3{
+    font-size: 1vw;
+}
+#legal{
+    line-height: 35px;
+    /* padding-top: 15px; */
+    margin-top: -67px;
+}
+#legal h1{
+    font-size: 1.5vw;
+    text-transform: uppercase
+}
+#legal h3{
+    font-size: 1vw;
+}
+#upper{
+    border-bottom: 1px solid #dadada;
+}
+#lower{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#lower{
+    padding: 30px 30px;
+}
+#lcombine h2{
+    font-size: 1.25vw;
+}
+#lcombine a{
+    color: rgb(115, 115, 229);
+    text-decoration: none;
+}
+#lcombine {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+@media (max-width:600px) {
+    #social-media{
+        margin-top: 3vw;
+        line-height: 6vw;
+    }
+    #social-media h1{ 
+    font-size: 4vw;
+    }
+    .sm-combine{
+        gap: 4vw;
+        padding-left: 1vw;
+    }
+    #solutions{
+        line-height: 6vw;
+        padding-top: 1vw;
+    }
+    #solutions h1{
+        font-size: 2.5vw;
+    }
+    #solutions h3{
+        font-size: 1.75vw;
+    }
+    #support{
+        line-height: 6vw;
+        margin-top: -11vw;
+    }
+    .combine{
+        gap: 1vw;
+    }
+    #support h1{
+        font-size: 2.25vw;
+    }
+    #support h3{
+        font-size: 1.75vw;
+    }
+    #advisor{
+        line-height: 6vw;
+        margin-top: -6vw;
+    }
+    #advisor h1{
+        font-size: 2.25vw;
+    }
+    #advisor h3{
+        font-size: 1.75vw;
+    }
+    #legal{
+        line-height: 6vw;
+        margin-top: -12vw;
+    }
+    #legal h1{
+        font-size: 2.25vw;
+    }
+    #legal h3{
+        font-size: 1.75vw;
+    }
+    #lower{
+        padding: 4vw 20vw;
+    }
+    #lcombine h2{
+        font-size: 2vw;
+    }
+    #lcombine {
+        gap: 3vw;
+    }
+}
